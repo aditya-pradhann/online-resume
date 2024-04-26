@@ -12,7 +12,7 @@ export const About = () => {
 
       <p>
         Over time, my expertise expanded to encompass advanced styling techniques using SASS/SCSS, and I adpetly navigated through the complexities of popular
-        font-end frameworks like Angular and React.
+        front-end frameworks like Angular and React.
       </p>
     </div>
   );
