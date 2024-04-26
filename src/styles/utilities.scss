@@ -1,0 +1,62 @@
+/* Width */
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+/* Padding */
+.p-0 {
+    padding: 0;
+}
+
+.py-1 {
+    padding: {
+        top: .25rem;
+        bottom: .25rem;
+    }
+}
+
+.px-3 {
+    padding: {
+        left: .75rem;
+        right: .75rem;
+    }
+}
+
+.py-24 {
+    padding: 6rem 0;
+}
+
+/* Margin */
+.mr-5 {
+    margin-right: 1.25rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+/* Gap */
+.gap-1 {
+    gap: 1rem;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}

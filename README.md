@@ -1,1 +1,1 @@
-# online-resue
+# online-resume
