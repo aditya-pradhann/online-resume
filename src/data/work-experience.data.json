@@ -1,0 +1,27 @@
+[
+    {
+      "duration": "Aug 2021 - Present",
+      "title": "Senior Software Engineer - Truminds",
+      "desc": "Since joining Truminds in August 2021, I've been involved in diverse projects. This included redesigning a Maritime connectivity platform build on ReactJS to match Figma designs approved by the client. Additionally, I worked on an IoT connectivity platform, where I interacted weekly with clients for feature demos and requirement gathering, while also converting high-level desings to low-level designs. In the Management Information System project, I engaged in requirements gathering, Figma design creation, framework selection, code reviews for the team, and mentoring intern in Angular. Moreover, I handled the UI for the Telecom Service Portal, leading the front-end team and implementing new features using Angular 14.",
+      "skills": ["Typescript", "JavaScript", "Angular", "ReactJS", "SASS", "Figma"]
+    },
+    {
+      "duration": "Feb 2021 - July 2021",
+      "title": "Senior Software Engineer - IoT83",
+      "desc": "Successfully converted a web application from React to Angular required close collaboration with both the QA and design teams on a daily basis to ensure a seamless integration and full functionality. Actively engaging in writing comprehensive unit test cases was essential to maintain high-quality code and minimize errors throughout the transition process. Additionally, consistent communication and collaboration with the client on a weekly basis were crucial in addressing concerns, providing updates, and ultimately ensuring client satisfaction with the project's progress and outcome.",
+      "skills": ["Typescript", "Angular", "Jest", "SASS"]
+    },
+    {
+      "duration": "June 2019 - Jan 2021",
+      "title": "Software Engineer - ProfEdge Solutions",
+      "desc": "I was involved in several key projects such as creating a static website for the Maritime Connectivity Platform using fundamental web technologies. Additionally, I successfully converted a PhP based Survey review platform to Angular 8, enhancing its functionality and user interface. I was actively engaged with the clients to gather requirements for a Content Management System (CMS). Moreover, I contributed to a Cloud orchestration platform by integrating REST APIs to retrieve server details from platforms such as AWS, Azure, and GCP. Furthermore, I collaborated with the movbile app development team to create iOS and Android mobile apps for the cloud orchestration platform, ensuring a cohesive user experience across devices.",
+      "skills": ["Typescript", "JavaScript", "Angular", "SASS", "Figma"]
+    },
+    {
+      "duration": "Sept 2018 - April 2019",
+      "title": "Software Engineer - Arohar Technologies",
+      "desc": "Joining Arohar Technologies as an intern in September 2018, I transitioned to a full-time employee by November of the same year. During my tenure, I underwent rigorous training in ASP .Net, SQL, and AngularJS. I contributed to projects such as GST Billing and Accounting Software where I redesigned the login screen and developed a sale purchase summary report. Aditionally, I crafted websites for diverse clients utilizing basic web technologies. Furthermore, I played a pivotal role in the development of an orthotics and prosthetics e-commerce website, leveraging my expertise in AngularJS.",
+      "skills": ["HTML", "CSS", "Javascript", "AngularJS", "ASP .Net", "SQL"]
+    }
+  ]
+  
