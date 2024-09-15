@@ -9,16 +9,19 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 import "../styles/style.scss";
 
-export const Header = () => {
+export const Header = ({onOpenModal}) => {
   const social = [
     {
       iconName: faLinkedin,
-      link: "https://www.linkedin.com/in/aditya-pradhan-346859157/",
+      link: "https://www.linkedin.com/in/pradhanadi/",
     },
     { iconName: faGithub, link: "https://github.com/aditya-pradhann" },
-    { iconName: faXTwitter, link: "https://twitter.com/AdiCodes07" },
     { iconName: faEnvelope, mailTo: "adityaa.pradhan@outlook.com" },
   ];
+
+  const openDownloadResumeModal = () => {
+    onOpenModal(true);
+  }
 
   return (
     <header className="hero py-24">
@@ -26,12 +29,11 @@ export const Header = () => {
         <h1>Aditya Pradhan</h1>
         <h2>Senior Software Engineer</h2>
         <p>
-          Experienced Software Developer with a proven track record of
-          successfully driving and contributing to diverse projects across
-          various domains. Adept at translating project requirements into
-          tangible solutions, optimizing codebase quality, and fostering
-          collaborative environments.
+          Experienced Software Developer specializing in delivering high-performance solutions with Angular. Proven track record of leading projects, optimizing code, and enhancing user experiences. Committed to innovation, collboration, and timely, client-focused results.
         </p>
+        <div className="btn-cont mt-1">
+          <button className='btn btn-primary' type="button" onClick={openDownloadResumeModal}>Resume</button>
+        </div>
       </div>
 
       <ul className="flex p-0">

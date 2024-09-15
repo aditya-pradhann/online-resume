@@ -1,5 +1,6 @@
 @import "./vars.scss";
 @import "./utilities.scss";
+@import "./modal.scss";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap");
 
 *,
@@ -224,6 +225,48 @@ header {
       size: 0.75rem;
       weight: 500;
     }
+  }
+}
+
+.btn {
+  display: inline-flex;
+  font-size: 0.8rem;
+  transition: all 0.4s;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+
+  &-primary {
+    background-color: rgb(220, 75, 72);
+    color: #ffffff;
+  }
+}
+
+.resume {
+  p {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    border: 2px solid rgb(241, 241, 241);
+    color: rgb(241, 241, 241);
+    background: transparent;
+    outline-color: rgb(241, 241, 241);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }
 
