@@ -28,7 +28,7 @@ export const Header = ({onOpenModal}) => {
         <h1>Aditya Pradhan</h1>
         <h2>Senior Software Engineer</h2>
         <p>
-          Experienced Software Developer specializing in delivering high-performance solutions with Angular. Proven track record of leading projects, optimizing code, and enhancing user experiences. Committed to innovation, collboration, and timely, client-focused results.
+          Experienced Software Developer specializing in delivering high-performance solutions with Angular. Proven track record of leading projects, optimizing code, and enhancing user experiences. Committed to innovation, collaboration, and timely, client-focused results.
         </p>
         <div className="btn-cont mt-1">
           <button className='btn btn-primary' type="button" onClick={openDownloadResumeModal}>Resume</button>
