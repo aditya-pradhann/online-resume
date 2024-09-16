@@ -89,6 +89,11 @@
           padding-top: 0;
       }
     }
+
+    .modal-content {
+      width: 100%; /* Full width on small screens */
+      padding: 15px;
+    }
   }
   
   /* Media query for extra small screens (small phones) */
@@ -134,6 +139,11 @@
       main {
           padding-top: 0;
       }
+    }
+
+    .modal-content {
+      width: 100%; /* Full width on mobile screens */
+      padding: 10px;
     }
   
   }
