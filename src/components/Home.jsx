@@ -6,12 +6,45 @@ import { About } from "./About";
 import { WorkExperience } from "./WorkExperience";
 import Modal from "./Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCloudDownloadAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const [backgroundGradient, setBackgroundGradient] = useState(
     "radial-gradient(600px at 1225px 370px, rgba(29, 78, 216, 0.15), transparent 80%)"
   );
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  const resumePath =
+    "https://resume.adityapradhan.dev/static/AdityaPradhan.pdf";
+
+    const downloadFile = async () => {
+      try {
+        const response = await fetch(resumePath);
+  
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+  
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+  
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'AdityaPradhan.pdf';
+  
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      } catch (error) {
+        console.error('Error downloading the file:', error);
+      }
+    };
 
   useEffect(() => {
     const handleMouseMove = (event) => {
@@ -28,11 +61,6 @@ const Home = () => {
       document.body.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
 
   return (
     <>
@@ -64,9 +92,13 @@ const Home = () => {
       >
         <div className="resume">
           <p className="">Link</p>
-          <input type="text" value="https://resume.adityapradhan.dev/static/AdityaPradhan.pdf" readOnly />
+          <input type="text" value={resumePath} readOnly />
 
-          <button type="button" className="mt-1 btn btn-primary btn-icon">
+          <button
+            type="button"
+            className="mt-1 btn btn-primary btn-icon"
+            onClick={downloadFile}
+          >
             <FontAwesomeIcon icon={faCloudDownloadAlt} />
             Download
           </button>
