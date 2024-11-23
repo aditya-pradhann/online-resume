@@ -11,7 +11,7 @@ export const About = () => {
       </p>
 
       <p>
-        Over time, my expertise expanded to encompass advanced styling techniques using SASS/SCSS, and I adpetly navigated through the complexities of popular
+        Over time, my expertise expanded to encompass advanced styling techniques using SASS/SCSS, and I adeptly navigated through the complexities of popular
         front-end frameworks like Angular and React.
       </p>
     </div>
